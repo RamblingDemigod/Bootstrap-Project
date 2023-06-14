@@ -1,0 +1,38 @@
+#myImage{
+    position: relative;
+    height: 400px;
+    width: 400px;
+  }
+  
+  #myPTag{
+    color: rgb(242, 255, 0);
+    font-size: large;
+    left: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  
+  #myDiv{
+    width: 200px;
+    height: 200px;
+    top: 10px;
+    left: 50%;
+    border-right: 200px;
+    border-radius: (0px, 0px, 200px, 0px);
+    border: 10px solid;
+    border-color: greenyellow;
+    background-color: rgb(200, 0, 255);
+    position: relative;
+  }
+  
+  #myDivs{
+    width: 200px;
+    height: 200px;
+    top: 100px;
+    left: 50%;
+    border-right: 200px;
+    border-radius: (0px, 0px, 200px, 0px);
+    border: 10px solid;
+    border-color: rgb(255, 0, 0);
+    background-color: rgb(95, 0, 0);
+    position: relative;
+  }
