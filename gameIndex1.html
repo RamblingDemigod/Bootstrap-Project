@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS1/index1.css">
+    <link rel="stylesheet" href="../CSS1/style1.css">
+    <title>Loading Screen</title>
+</head>
+<body>
+    <main class="background">
+        <section class="title">
+            <h1>Game Mode</h1>
+        </section>
+        <div class="button-container">
+            <button class="restart1" onclick="playSound('Sound/bgMusic.wav', true); loadGame('two')">Single Player</button>
+            <button class="restart1" onclick="playSound('Sound/bgMusic.wav', true); loadGame('single')">Two Players</button>
+            <button class="restart1" onclick="playSound('Sound/bgMusic.wav', true); loadGame('three')">Home</button>
+        </div>
+        <section class="display"></section>
+    </main>
+</body>
+<script src="../JS1/script1.js"></script>
+</html>

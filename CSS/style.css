@@ -1,41 +1,41 @@
-#myImage{
-    position: relative;
-    height: 400px;
-    width: 400px;
-  }
-  
-  #myPTag{
-    color: rgb(242, 255, 0);
-    font-size: large;
-    left: 30px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  }
-  
-  #myDiv{
-    width: 200px;
-    height: 200px;
-    top: 10px;
-    left: 50%;
-    border-right: 200px;
-    border-radius: (0px, 0px, 200px, 0px);
-    border: 10px solid;
-    border-color: greenyellow;
-    background-color: rgb(200, 0, 255);
-    position: relative;
-  }
-  
-  #myDivs{
-    width: 200px;
-    height: 200px;
-    top: 100px;
-    left: 50%;
-    border-right: 200px;
-    border-radius: (0px, 0px, 200px, 0px);
-    border: 10px solid;
-    border-color: rgb(255, 0, 0);
-    background-color: rgb(95, 0, 0);
-    position: relative;
-  }
+#myImage {
+  position: relative;
+  height: 400px;
+  width: 400px;
+}
+
+#myPTag {
+  color: rgb(242, 255, 0);
+  font-size: large;
+  left: 30px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#myDiv {
+  width: 200px;
+  height: 200px;
+  top: 10px;
+  left: 50%;
+  border-right: 200px;
+  border-radius: (0px, 0px, 200px, 0px);
+  border: 10px solid;
+  border-color: greenyellow;
+  background-color: rgb(200, 0, 255);
+  position: relative;
+}
+
+#myDivs {
+  width: 200px;
+  height: 200px;
+  top: 100px;
+  left: 50%;
+  border-right: 200px;
+  border-radius: (0px, 0px, 200px, 0px);
+  border: 10px solid;
+  border-color: rgb(255, 0, 0);
+  background-color: rgb(95, 0, 0);
+  position: relative;
+}
 
 body {
   font-family: Arial, sans-serif;
@@ -50,17 +50,22 @@ body {
 }
 
 .navbar {
-  padding: 10px;
+  padding: 5px;
 }
 
 .jumbotron {
-  background-color: #f8f9fa;
+  background-color: #dfdfdf;
   padding: 100px;
   text-align: center;
   margin-bottom: 30px;
 }
 
+
 .section {
+  margin-bottom: 30px;
+}
+
+.section1 {
   margin-bottom: 30px;
 }
 
@@ -97,8 +102,6 @@ body {
   box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
 }
 
-/* style.css */
-
 /* Global styles */
 body {
   font-family: Arial, sans-serif;
@@ -123,16 +126,24 @@ p {
 
 /* Navbar styles */
 .navbar {
-  background-color: #f8f9fa;
+  background-color: #ffffff;
+  background-image: linear-gradient(to bottom, #c800ff, #ffacfe);
+  box-shadow: 0 2px 4px rgba(126, 126, 126, 0.1);
+  transition: background-color 0.3s ease-in-out;
+  size: 10px;
+}
+
+.navbar:hover {
+  background-color: #ffffff;
 }
 
 .navbar-brand {
-  color: #333;
+  color: #2200ff;
   font-weight: bold;
 }
 
 .navbar-nav .nav-link {
-  color: #666;
+  color: #000000;
 }
 
 /* Home page styles */
@@ -168,7 +179,7 @@ p {
 }
 
 .card-img-top {
-  height: 200px;
+  height: 400px;
   object-fit: cover;
 }
 
@@ -208,4 +219,208 @@ p {
   color: #666;
 }
 
-  
+
+  /* Additional custom styling */
+  .jumbotron {
+    background: linear-gradient(45deg, lightpink, white, purple) !important;
+    color: white !important;
+    text-align: center !important;
+    padding: 150px !important;
+    position: relative !important;
+    z-index: 2 !important;
+    overflow: hidden !important;
+  }
+
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .section {
+      padding: 100px 0;
+      text-align: center;
+      z-index: 0 !important;
+      color: #000000;
+      animation: slideUp 1s ease-in-out;
+      background: linear-gradient(45deg, #f9a8d4, #9a5cf3); /* Add a gradient background color */
+      transition: background 0.5s ease-in-out; /* Add a smooth transition for background color */
+    }
+    
+    .section:hover {
+      background: linear-gradient(135deg, #f9a8d4, #9a5cf3); /* Change gradient direction on hover */
+    }
+
+
+    .newSection {
+      padding: 100px 0;
+      animation: slideUp 1s ease-in-out;
+      background: linear-gradient(45deg, #f9a8d4, #9a5cf3); /* Add a gradient background color */
+      transition: background 0.5s ease-in-out; /* Add a smooth transition for background color */
+    }
+    .newSection:hover {
+      background: linear-gradient(135deg, #9a5cf3,#f9a8d4 ); /* Change gradient direction on hover */
+    }
+
+    
+
+    
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .section1 {
+      padding: 100px 0;
+      text-align: center;
+      animation: slideUp 1s ease-in-out;
+      background: linear-gradient(45deg, #f9a8d4, #9a5cf3); /* Add a gradient background color */
+      transition: background 0.5s ease-in-out; /* Add a smooth transition for background color */
+      opacity: 0.5; /* Decrease the opacity */
+    }
+    
+    .section1:hover {
+      background: linear-gradient(135deg, #9a5cf3, #f9a8d4); /* Change gradient direction on hover */
+      opacity: 0.5; /* Reset the opacity on hover */
+    }
+    
+    
+    
+
+    @keyframes slideUp {
+      0% {
+        transform: translateY(50px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .card {
+      margin-bottom: 30px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .footer {
+      background-color: #f8f9fa;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .about-image {
+      position: relative !important;
+      height: 400px !important;
+      width: 600px !important;
+      top: auto !important;
+      left: auto !important;
+      z-index: 3 !important;
+    }
+    
+    
+        .about-description {
+          font-size: 1rem !important;
+          line-height: 1.6 !important;
+          color: #313131;
+        }
+        .about-description1 {
+          font-size: 1.3rem !important;
+          line-height: 1.6 !important;
+          color: #000000;
+        }
+    
+        .skill-card {
+          background-color: #f8f9fa !important;
+          padding: 1rem !important;
+          border-radius: 8px !important;
+          margin-bottom: 1.5rem !important;
+        }
+    
+        .skill-card h3 {
+          margin-bottom: 0.5rem !important;
+        }
+    
+        .code-effect {
+          position: relative !important;
+          overflow: hidden !important;
+        }
+    
+        .code-effect:before {
+          content: "" !important;
+          position: absolute !important;
+          top: 0 !important;
+          left: 0 !important;
+          width: 100% !important;
+          height: 100% !important;
+          background-image: linear-gradient(135deg, #9a5cf3 0%, #f9a8d4 70%) !important;
+          z-index:  !important;
+          opacity: 0.4 !important; /* Updated opacity value */
+          transition: opacity 0.4s ease !important;
+        }
+        
+        .code-effect:hover:before {
+          opacity: 0.7 !important;
+        }
+        
+
+        #contact {
+          display: flex !important;
+          flex-direction: column !important;
+          align-items: center !important;
+          justify-content: center !important;
+          text-align: center !important;
+          margin-bottom: +35px !important; /* Add margin-bottom to create space */
+        }
+        
+        #contact .container {
+          max-width: 500px !important;
+          margin: 0 auto !important;
+        }
+        
+        #contact h2 {
+          margin-bottom: 20px !important;
+        }
+        
+        #contact form {
+          width: 100% !important;
+        }
+        
+        #contact .form-group {
+          margin-bottom: 20px !important;
+        }
+        
+        #contact .btn-primary {
+          width: 100% !important;
+        }
+        
+        #linkedin-section {
+          display: flex !important;
+          flex-direction: column !important;
+          align-items: center !important;
+          justify-content: center !important;
+          text-align: center !important;
+          margin-top: -350px !important; /* Add negative margin-top to move it up */
+          margin-left: 860px;
+          height: 5vh !important;
+        }
+
+        .allign{
+          text-align: center;
+        }
+
+    

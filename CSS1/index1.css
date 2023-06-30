@@ -1,0 +1,32 @@
+.body1 {
+    font-family: Arial, sans-serif !important;
+    text-align: center !important;
+}
+
+.background1 {
+    background-color: #f2f2f2 !important;
+}
+
+.title1 {
+    margin-top: 200px !important;
+    font-size: 36px !important;
+}
+
+.restart1 {
+display: block;
+margin: 140px auto; /* Adjust the margin-top value as needed */
+padding: 10px 20px;
+font-size: 24px;
+background-color: #ff00dd !important;
+color: white !important;
+border: none !important;
+border-radius: 4px !important;
+cursor: pointer !important;
+text-align: center !important;
+}
+
+.restart1:hover {
+background-color: #459da0 !important;
+text-align: center !important;
+}
+

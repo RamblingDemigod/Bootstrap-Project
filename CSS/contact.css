@@ -1,0 +1,28 @@
+#contact {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+  
+  #contact .container {
+    max-width: 500px !important;
+    margin: 0 auto !important;
+  }
+  
+  #contact h2 {
+    margin-bottom: 20px !important;
+  }
+  
+  #contact form {
+    width: 100% !important;
+  }
+  
+  #contact .form-group {
+    margin-bottom: 20px !important;
+  }
+  
+  #contact .btn-primary {
+    width: 100% !important;
+  }
